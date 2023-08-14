@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="imagenes/hades0.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="index.html" class="logo">APRA</a>
+
+            <form action="search.html" method="post" class="search-form">
+                <input type="text" id="search_box" name="search_box" placeholder="Buscar cursos..." maxlength="100">
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+
+            <div id="autocomplete-results"></div>
+
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img loading="lazy" src="assets/img/hades0.png" class="image" alt="">
+                <h3 class="name">Hades</h3>
+                <p class="role">Estudiante</p>
+                <a href="profile.html" class="btn">Ver perfil</a>
+                <div class="flex-btn">
+                    <a href="#" class="option-btn">Login</a>
+                    <a href="#" class="option-btn">Registrarte</a>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <div class="side-bar">
+
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="profile">
+            <img loading="lazy" src="assets/img/hades0.png" class="image" alt="">
+            <h3 class="name">Hades</h3>
+            <p class="role">Estudiante</p>
+            <a href="profile.html" class="btn">Ver perfil</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+        </nav>
+
+    </div>
+
+    <section class="contact">
+
+        <div class="row">
+
+            <div class="image">
+                <img loading="lazy" src="assets/img/1.jpg" alt="">
+            </div>
+
+            <form id="contact-form" method="post">
+                <h3>Contáctanos</h3>
+                <input type="text" placeholder="Name" name="from_name" id="from_name" maxlength="50"
+                    class="box message">
+                <input type="email" placeholder="Email" name="email_id" id="email_id" maxlength="50"
+                    class="box message">
+                <input type="text" placeholder="Asunto" name="reply_to" id="reply_to" maxlength="50"
+                    class="box message">
+                <textarea placeholder="Message" name="message" id="message" maxlength="1000" cols="30" rows="10"
+                    class="box message"></textarea>
+                <button type="submit" id="button" class="inline-btn" class="btn"> Enviar <i
+                        class="fas fa-paper-plane"></i> </button>
+            </form>
+
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone Number</h3>
+                <a href="#">No quiero terminar doxeado</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Address</h3>
+                <a href="mailto:hades.0413@hotmail.com">hades.0413@hotmail.com</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Office Address</h3>
+                <a href="#">Mi Baticueva</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        &copy; Copyright <span>Hades0413</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('HWZfijXEVIcZyCeuf');
+    </script>
+
+</body>
+
+</html>
